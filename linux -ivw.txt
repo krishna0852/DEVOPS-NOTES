@@ -1,0 +1,28 @@
+A user is not able to ssh to a remote server , what could be the possible cause?
+
+1st:  for pem key file should have permissions 400 if it has other than this permissions it will not able to do.
+2nd:we need to ckeck the file:
+
+vim/etc/ssh/sshd_config---it ocntains the port number which the ssh port is running currently
+and also shows the address family , Authentication --whether any user is denyed to login 
+we can do like this 
+DenyUser teja
+
+teja user has no access to ssh 
+
+allowusers teja teja can only access to ssh
+need to look public authentication 
+also needo check for this folder permissions.
+cd /var/empty/--for this folder the permissions should be 711 it other than this we can't ssh
+
+
+
+setfacl -m u:username:rwx /tmp/abc===
+getfacl /temp/abc---it will displays the permissions 
+
+
+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--token
+
+
+
+

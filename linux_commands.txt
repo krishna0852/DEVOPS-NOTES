@@ -1,0 +1,437 @@
+who----we can know who are login at present 
+who -a --We are login past and present
+who -b --it will shows the time when the system was lastly booted.
+uname---operationg system name
+uname -a --opeationg system name along with the hostname 
+hostname---to display the hostname 
+history---- list of commands used in earlier
+! number (based on hisotry )
+O----NEW LINE ON TOP OF THE CURSOR 
+:w file_backup (exit mode)
+:e!--discard changes (exit mode)
+:sh ---switch to shell prompt (temporarily)  and then to ctrl+d to return back to vi editor (exit mode)
+x-- to clear the character in a string from right side of the string (command mode)
+X-- to clear the character in a string from left side of the string (command mode)
+DD-- to delete the entire line 
+D-- to delete the line after the cursor
+dG---it will eraaie the data below the curosr
+d1G---IT WILL ERAISE THE DATA ABOVE THE CUROSR 
+SET NU --- SHOWS THE NUMBER IN EACH LINE IN VI-EDITOR 
+set nonu ---to remove the numbers
+##you can delete the lines using numbers with the below command 
+11,15 d ----> it will delete all the lines from 11 and 15(including
+G---CURSOR POINTS TO THE END-OF-THE LINE 
+1G--CURSOR POINTS TO THE TOP-OF-THE LINE
+
+H-- CURSOR POINTS TO TOP-OF-THE LINE IN SCREEN
+L-- CUSROSR POINTS TO END-OF-THE LINE IN SCREEN
+M--CURSOR POINTS TO MIDDLE OF THE LINE IN SCREEN 
+
+CC
+C --it will clear the data after the cursor and mode changes to insert
+J--TO join the lines.
+
+set ic---it will ignore the case sensitive
+set noic --it will remove the case '' '' ''
+
+11,15 co 33 ===it will copy the 11 to 15 lines and it will paste from 33
+11,15 m 33 ===it will move the lines from 11,15 to 33
+
+========================
+etc/os-release-> this location has the version details of the system and also flavour name.
+
+cat etc/os_release
+=======================
+
+you can write the multiple commands in a single line by diving the each command either ; or && 
+
+eg: ls ; date ; cal 
+eg: ls && date && cal
+============================================================================================
+alias aliasname="cd ~/path;ls"
+if you want to remove alias 
+unalias aliasname
+
+alias are not permanent ,once system get booted alias will be eraised form the system
+if you want to make alias as permanent we need to put this alias name in some file. @@@##doubt
+=====================================================================================================================================
+
+expr 2 + 3 //spaces are mandatory
+
+expr 2 * 3 // it will give an error because astrick is consider as a special character in linux , if you want to perform any operation based on astrick add \ before astrick.. also for other operators as well  
+
+expr 2 \* 3 // 6
+=========================
+
+echo is like print function in lilnux .
+
+if you want to create a subdirectory while creating the parent directory you need to pass an argument (-p) with the mkdir command == mkdir -p parent_directory/subdirecotry
+
+===============
+https://linuxhandbook.com/cp-command/  --- about the copy command 
+
+cp is used to copy the files or directories
+
+if you are copying the directorties along with the sub-directories then we need to pass the argument -r 
+
+cp source_file target_file
+
+cp -r dir_1 dir_8 ## all the files and sub-directories which are in dir_1 will be copied into the dir_8
+====================================
+
+=====
+https://ostechnix.com/test-your-bash-skills-by-playing-command-line-games/ --- practice .
+==
+ 
+ 
+ 
+cp -r
+cat -n 
+
+more ---more command is used to view the data page by page also shows the percentage and it's work in forward direction ----nextpage --space bar,   nextline---enter
+less-less command is used to view the data page by page and it's works in both forward and backward direction ----nextpage--spacebar, nextline-enter, previous page--uparrow
+
+
+
+
+
+
+
+
+sort command
+
+
+sort file_name --it will print the data in aplhabetical order ..original file will not reflect 
+
+
+
+sort file-name > sortedfile.txt --we are creating a new file after sorting 
+
+sort -r filename --reversed order 
+
+
+===
+before using uniq command the data should be sorted 
+
+uniq file_Name --list the data without duplicate records 
+uniq -d file_name --list the data only with duplicate records 
+
+uniq -c fil_name --it will show the how many types it has repeated 
+
+
+
+
+
+================
+
+
+
+
+cmp---it will show the difference exactly where the files has 
+cmp file fil2
+
+
+diff file1 file2
+
+< file1 data which is not having at file2
+>file2 which is not having at file1
+
+
+c-change
+d-delete
+a-add
+
+===============
+ comm
+
+used to compare 2 sorted files
+it provides output in 3 columns
+in first column displays unique in first file
+in second column displays unique in second line 
+in third column displays displays common lines in 2 files 
+
+
+
+
+input ,output and error direction
+==================================
+
+output redirection > >> 1     -----------1 representing the ooutput redirection but optional 
+error redirection > >> 2      ----2 mandatory        
+input redirection < 0         ---1 optional 
+
+
+cat 1> output.txt
+1
+2
+3
+
+after ctrl +d rather than displaying it will store in the output.txt
+
+>  -it will override the previous content 
+>> it will append the data with the previous content 
+
+
+tty
+
+
+
+
+=============
+
+piping 
+===========
+
+we can pass output of one command as input for next command is called piping
+
+
+ls -l > output.txt | wc 
+
+
+* In middle of piping if we use redirection then it breaks piping 
+
+
+
+tee
+---
+ls -l /etc | tee output.txt | wc
+
+it will transfer to output file and ;ater it transfer to wc 
+
+
+xargs';
+========
+
+
+cat test.sh | xargs rm 
+
+date | xargs echo 
+
+
+========
+
+
+
+Regular expressions :
+
+
+to list out all the files present in current directory
+
+ls *
+
+
+where * represents as all
+
+
+==
+
+
+list out all files with some extension 
+
+
+ls *.*
+
+
+
+==
+list out the all files which starts with a
+
+ls a*
+
+
+===
+list out all files starts with t and ends with s
+
+ls t*s
+=====
+
+
+
+
+
+list out all files where filename contains only 2 chars
+
+each ? represents one char 
+
+
+ls ??
+
+
+
+
+===================
+
+
+
+list out all files where filename contains oly 2 chars and first charcter should be x
+
+
+ls x?
+
+
+
+====================
+
+
+
+list out all files where filename contains atleast 3 chars
+
+
+ls ???*
+
+
+========================
+
+list out all the files where file name starts with 's' or 't' or 'r'
+
+
+
+ls [str]*
+
+
+===============
+
+list out all the files where file name should not start with 's' or 't' or 'r'
+
+
+ls[!str]*
+
+
+===========
+list out all the files where file name starts with lower case 
+
+ls [a-z]*--it will not work for some flavours 
+
+
+ls [[:lower:]*]
+
+
+
+===========================
+
+
+list out all te files where file name start with upper case 
+
+
+ls [A-Z]*  IF IT DOESN'T WORK USE BELOW COMMAND
+
+
+ls [[:upper:]*]
+
+
+
+
+======
+list out all the files where the file name start with digit 
+
+
+ls [0-9]*
+----------------------------------+++++++++-------------------
+
+
+list out all the files where
+
+first letter should be upper case letter
+second letter should be digit and third letter should be lower case letter
+
+
+ls [A-Z][0-9][a-z]*
+
+
+
+=======================================================
+list out all the files starts with special symbols.
+
+ls [![:alnum:]]*
+
+
+
+====
+
+
+
+
+
+
+list out all the files with .java or .py extension 
+
+{}--represents or 
+
+
+ls {*.java, *.py}
+
+ls *.[java py]---need to try this 
+
+
+
+======
+
+
+
+copy all files starts with digit to dir1 directory
+
+
+
+
+cp [0-9]* dir1
+
+
+=====================
+
+
+move all files starts with aplhabet and with .txt extension to dir3 ddirectory
+
+
+mv [[:alpha:]]*.txt myidr2
+
+==========
+
+
+
+
+ps and kill commands
+=======================
+
+
+
+TYPE OF PROCFESSES:
+
+
+
+
+FOREGROUND PROCFESS
+BACKGROUND PROCESS USE & AFTER THE COMMAND TO RUN THE BACKGROUND PROCFESS ....SH SCRIPT.SH &
+
+
+ps -f ---this will shows the process whicha are running by the user 
+
+ps -e-- this will shows all the process running bu the linux and the user as well
+
+
+pd -ef --it will show all the process running with all the users
+
+
+ps -H
+
+PS -F -H  --BOTH COMMANDS CLEARLY SHOWS THE PARENT AND CHILD PROCESS
+
+
+YOU CAN LIS THTE PROCESS USING THE PTOCESS IF 
+
+PS 123
+
+
+CORRESPONFING PREOCESS TO 123 WILL DISPLAY
+
+
+
+YOU CAN KILL THE PROCESS 
+
+KILL PROCESSID
+
+KILL 9 121 NEED TO MENTION 9 BEFORE THE PROCESSID 
+
+
+
+
+		

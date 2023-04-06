@@ -1,0 +1,24 @@
+directory structure of a maven project:
+
+project_name/src/main
+
+
+tesing related-----test/
+
+target/classes
+
+
+
+
+
+
+
+
+
+mvn help:evaluate -Dexpression=settings.localRepository----you can find the .m2 repo in your local using this command.
+
+
+
+after compilation a target will file will be created and it has the class files of your java file 
+
+mvn install --will push the jar files to your local repository (m2)

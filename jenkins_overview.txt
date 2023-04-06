@@ -1,0 +1,103 @@
+installation
+configuration of JDK and Maven
+how to  build 
+upstream and downstream 
+user-management(role based plugin) 
+executors
+build triggers (poll Scm, build periodically)
+email notification 
+jforg
+thinbackup
+build parameter ---string parameters, choice parameters
+
+
+jenkins :
+
+jenkins.exe status 
+jenkins.exe stop
+jenkins.exe start
+jenkins.exe restart 
+
+
+tomcat :
+startup.bat 
+shutdown.bat
+we need to change the port number in conf file near connector port 
+
+
+
+Jforg:
+artifactory.bat --to start the service 
+uninstallservice.bat 
+
+
+
+
+
+
+
+
+more ---more command is used to view the data page by page also shows the percentage and it's work in forward direction ----nextpage --space bar,   nextline---enter
+less-less command is used to view the data page by page and it's works in both forward and backward direction ----nextpage--spacebar, nextline-enter, previous page--uparrow
+
+
+
+
+
+
+
+
+sort command
+
+
+sort file_name --it will print the data in aplhabetical order ..original file will not reflect 
+
+
+
+sort file-name > sortedfile.txt --we are creating a new file after sorting 
+
+sort -r filename --reversed order 
+
+
+===
+before using uniq command the data should be sorted 
+
+uniq file_Name --list the data without duplicate records 
+uniq -d file_name --list the data only with duplicate records 
+
+uniq -c fil_name --it will show the how many types it has repeated 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

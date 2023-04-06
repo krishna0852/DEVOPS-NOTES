@@ -1,0 +1,192 @@
+usr/share/nginx
+
+usr/share/nginx
+
+usr/share/nginx
+
+usr/share/nginx
+
+usr/share/nginx
+
+usr/
+
+
+
+
+
+=============================
+380000
+
+
+34000
+
+
+
+6-7--
+
+
+
+
+2hrs    
+
+
+
+4-5hrs============================jansi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create a Dockerfile that installs nginx and exposes port 80.
+
+
+
+Build an image from the Dockerfile you created in step 1, using the docker build command.
+
+Run a container from the image you built in step 2, using the docker run command.
+
+Mount a volume from the host machine to a container using the docker run -v command.
+
+Create a network in Docker using the docker network create command.
+
+Run two containers on the same network created in step 5, and have them communicate with each other.
+
+Create a Docker Compose file that defines a multi-container application.
+
+Use Docker Compose to start and stop the containers defined in the Compose file.
+
+Configure environment variables in a Docker Compose file using the env_file and environment directives.
+
+Use Docker Compose to scale a service up and down using the docker-compose up --scale command.
+
+
+
+
+From ubutnu
+
+run apt-get update
+
+run apt-get install nginx
+
+expose 80
+
+
+
+
+
+
+
+Create a Docker container with a basic web server using Apache or Nginx.
+Create a Docker container that runs a database server like MySQL or PostgreSQL.
+Build a Docker image that includes a Python Flask web application.
+Create a Docker container that runs a Node.js application.
+Set up a Docker container with a Redis cache server.
+Create a Docker swarm cluster and deploy a multi-service application to it.
+Set up a Docker container with a Jenkins CI/CD pipeline for a web application.
+Build a Docker image that includes an Elasticsearch database and Kibana dashboard.
+Create a Docker container that runs a WordPress site.
+Use Docker Compose to define and run a multi-container application stack.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dockerizing an existing application: Take an existing application that is not running in a Docker container and create a Dockerfile to containerize it.
+
+Creating a multi-stage Docker build: Use a multi-stage Docker build to create a smaller, more efficient Docker image. This involves using multiple Docker images in a single Dockerfile.
+
+Deploying a Dockerized application to a cloud provider: Use a cloud provider like Amazon Web Services (AWS) or Google Cloud Platform (GCP) to deploy your Dockerized application to a production environment.
+
+Creating a Docker volume: Use Docker volumes to persist data between container instances. Create a Docker volume and use it to store data for your application.
+
+Creating a Docker network: Use Docker networks to enable communication between container instances. Create a Docker network and configure your application to use it.
+
+Using Docker Compose to deploy a multi-container application: Use Docker Compose to define and deploy a multi-container application. This can involve using multiple Docker images and coordinating their deployment.
+
+Using Docker Swarm to deploy a multi-node application: Use Docker Swarm to deploy a multi-node application across a cluster of Docker nodes. This involves managing the deployment and scaling of your application across multiple nodes.
+

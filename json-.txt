@@ -1,0 +1,166 @@
+json--java script object notation
+json is a syntax for storing and exchanging data
+helps you to transfer data from a server
+Json format helps transmit and serialize all types of structured data
+allows you to perform asynchronous data calls without the need to do a refresh
+(AJAX-Asynchronous JavaScript and XML)
+you can transmit data between the server and web application using JSON
+web services and APIs use the JSON format to get public data
+
+characteristics:
+
+JSON Is easy to read and write
+it is lightweight text-based interchange format
+JSON is language independent i.e, it supports for all the programming languages.
+
+DATA TYPES
+
+NUMBER
+STRING
+BOOLEAN
+NULL
+OBJECT
+ARRAY
+
+
+======
+
+DATA IS STORED IN THE KEY-VALUE PAIR
+
+STRING :
+
+{"name":"Teja"}
+=================
+
+number :
+
+{"age":22}
+======================
+
+object: collection of keys and values
+{
+"employee":{"name":"Teja", "age":22 , "city":"Addanki"}
+}
+=====================================
+{
+"employees":{
+"name":"teja",
+"gender":"female",
+"country":"india"
+"state":"andhra-pradesh"
+}
+}
+
+
+===========
+
+array: multiple values into a single varibale
+
+{
+"employees":["teja","krishna","palla"]
+}
+============
+
+boolean:
+
+{"sale":true}
+================
+
+NULL:
+
+{"middlename":null}
+
+
+
+
+==================
+
+Each key is represented as a string in JSON and value can be any type.
+
+JSON -SYNTAX:
+
+* Data should be in name/value pairs
+* Data should be separated by commas
+* curly braces should hold objects 
+* square brackets hold arrays.
+
+
+
+{
+  "Student": [
+      
+	{
+	    "id":"01",
+		"name":"Teja",
+		"lastname":"Palla"
+	},
+	{
+	    "id":"02",
+		"name":"krishna",
+		"lastname":"palla"
+	}
+	
+  ]
+}
+
+
+json-nested object:
+
+{
+"firstname":"Krishna",
+"lastname":"Teja",
+"mobile_number":9963793414,
+"age":22,
+"address":{
+ "streetname":"Abyudaya nagar ",
+ "pincide":523201,
+ "district":"Prakasam"
+ }
+}
+
+===================
+
+JSON Array:
+
+Json array represents ordered list of values
+Json array can store multiple values . it can store string,number.boolean,object in json array
+In Json array, values must be separated by comma.
+The [] represents JSON array.
+
+
+
+
+
+JSON PATH :
+
+JSONPath is a query language for JSON, similar to xPath for XML
+
+JSONPath Expressions
+
+paths can use the dot notation 
+
+
+$.store.book[0].title
+
+inside store there is an array called book and from that we are extracting the data
+of title which is belongs to the 0th index.
+
+
+or bracket notation 
+
+$['store']['book'][0]['title']
+
+$ represents the roor object or array and can be omitted.
+
+[n]==selects the n-th element from an arrayindexes are 0-based 
+[index1,index2]==selects array elements with the specified indexes. Returns a list
+..property===for suppose you have 5 objects and each object contains the price value
+and you want to reterive all the price value of every object use #..price
+*==all the objects 
+[start:end]
+[start:]
+[:n]
+[-n:]
+
+[?(expression)]
+[(expression)]
